@@ -46,5 +46,4 @@ A professional, modern, and highly animated single-page portfolio website built 
 4. **Update colors** in the CSS variables if desired
 5. **Deploy** to your preferred hosting platform
 
-## 📁 Project Structure
 
