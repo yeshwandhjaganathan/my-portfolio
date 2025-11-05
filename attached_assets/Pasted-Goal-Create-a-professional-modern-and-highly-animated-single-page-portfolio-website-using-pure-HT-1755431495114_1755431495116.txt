@@ -1,0 +1,233 @@
+Goal: Create a professional, modern, and highly animated single-page portfolio website using pure HTML, CSS, JavaScript, and Bootstrap 5 (no external animation libraries). It must be mobile-first, responsive, fast, accessible (WCAG AA), and SEO-ready.
+
+Brand & Style
+
+Clean, minimalist dark theme with subtle glassmorphism cards and soft shadows.
+
+Rounded corners (lg+), generous whitespace, fluid spacing.
+
+Smooth micro-interactions: link hovers, button press states, card tilts (CSS only).
+
+Typography: clear hierarchy (hero 48–64px on desktop, scale down gracefully).
+
+Add a tasteful accent color for highlights (derive from hero image or a gradient).
+
+Use Bootstrap utilities where possible; custom CSS only for animations/details.
+
+
+Global Layout
+
+Sticky navbar with brand logo (initials “YJS”), smooth scroll to sections, active link highlighting on scroll.
+
+Sections (in order): Hero, About, Skills, Experience, Projects, Education, Certifications, Activities, Contact, Footer.
+
+Include a “Back to top” floating button that fades in/out on scroll.
+
+Provide light/dark toggle (store preference in localStorage).
+
+
+Animations (vanilla CSS + JS)
+
+Page load fade-in and hero content typewriter headline.
+
+Scroll-reveal (IntersectionObserver): sections slide/fade from different directions.
+
+Counters for years/metrics (e.g., CGPA, project count).
+
+Parallax hero background (CSS transform on scroll, JS throttled).
+
+Skill bars/chips animate on entering viewport.
+
+Respect prefers-reduced-motion: disable animations for those users.
+
+
+Content (Fill with the following details)
+
+Name: YESHWANDH J S
+
+Title: Aspiring Computer Engineering Graduate | Python • Web Dev • AI/ML
+
+Location: Tiruchengode
+
+Email: yeshwandhjaganathan@gmail.com
+
+Phone: +91-8610971738
+
+Links:
+
+LinkedIn: https://linkedin.com/in/yeshwandh-j-s-a1297b352
+
+GitHub: https://github.com/yeshwandhjaganathan
+
+Live Portfolio (old): https://yeshwandh-js-porofolio.netlify.app/
+
+
+Career Objective (shorten for hero sub-text + full in About):
+Aspiring Computer Engineering graduate with strong Python fundamentals; keen on software development, automation, and backend systems. Experience with web development (Django), basic AI/ML, and databases. Fast learner, team player, focused on solving real problems.
+
+Technical Skills (group & render as filterable chips + badges):
+
+Languages: Python, SQL, JavaScript, HTML/CSS, PHP
+
+Frameworks: Django, Flask (learning)
+
+Backend: ORM (Django ORM)
+
+Libraries: NumPy, Pandas, TensorFlow, OpenCV, scikit-learn
+
+Tools: Git, GitHub, Linux, VS Code, Thonny
+
+Databases: MySQL, SQLite
+
+
+Experience (timeline cards):
+
+AI/ML Intern — Novi-Tech Solution Pvt. Ltd (Apr 2025 – Present)
+
+Assisted AI model development using Python, scikit-learn, Pandas
+
+Pre-processed large datasets for ML pipelines
+
+Integrated ML outputs into web systems with backend team
+
+Participated in Agile sprints and standups
+
+
+
+Projects (cards with tags + “View Code” buttons):
+
+1. Blood Bank Management System — Python, SQL, JavaScript, HTML/CSS
+
+Donor management, emergency requests, CRUD, optimized queries, automated inventory tracking.
+
+Buttons: View Code (GitHub), Live Demo (if available).
+
+
+
+2. Insurance Claim Image Classification — Python, TensorFlow
+
+DenseNet-based CNN for vehicle damage severity, image pipeline, prediction API, boosted accuracy.
+
+Buttons: View Code, Read More.
+
+
+
+
+Education (cards):
+
+K. S. Rangasamy Institute of Technology — Diploma in Computer Engineering (2023–2026) — CGPA: 9.7/10
+
+Govt Hr. Sec. School, R. Pudupplayam — SSLC (2022–2023) — 77.6%
+
+
+Certifications:
+
+Artificial Intelligence — Novi-Tech
+
+Academic Excellence Award — K. S. R. Institute (2023)
+
+
+Activities:
+
+NSS Volunteer; Tech Titans Club — core contributor & event organizer.
+
+
+Personal:
+
+Strengths: Quick Learner, Leadership, Team Player
+
+Languages: English, Tamil
+
+
+
+Hero Section
+
+Big name + animated role typing (rotate: “Python Developer”, “Web Developer”, “AI/ML Enthusiast”).
+
+CTA buttons: Download Resume (PDF), Hire Me (Contact), View Projects.
+
+Subtle animated background shapes using CSS only (no canvases/libs).
+
+
+Skills Section
+
+Display as responsive grid of chips/badges with icons (Bootstrap Icons).
+
+On scroll-in: chips stagger-fade; progress bars or compact meter lines fill to 80–95% where appropriate.
+
+Filters: “All / Languages / Frameworks / Libraries / Tools / Databases”.
+
+
+Experience Section
+
+Vertical timeline with company badges; cards slide-in alternately from left/right.
+
+Include key bullet points; “View Recommendation” placeholder button (optional).
+
+
+Projects Section
+
+Masonry-like responsive grid (Bootstrap row/cols).
+
+Each card: title, short description, tech tags, buttons for Code and Demo.
+
+Hover: lift + shadow; click: modal with more details & screenshots (use placeholders).
+
+
+Education, Certifications, Activities
+
+Three compact rows with icons; light animations; counters for CGPA/percent.
+
+
+Contact Section
+
+Left: contact info + social icons (open in new tab).
+
+Right: working contact form (name, email, subject, message) with HTML5 validation.
+
+JS: show success/error toasts (no backend—use mailto: fallback or simple client-side email service placeholder).
+
+Add Google Map iframe placeholder (commented for privacy).
+
+
+Footer
+
+Copyright with current year (render via JS), quick links, “Built with Bootstrap”.
+
+“Switch Theme” toggle mirrored here as well.
+
+
+Technical Requirements
+
+Stack: Only HTML, CSS, vanilla JS, Bootstrap 5 (via CDN). No jQuery, no external animation libs.
+
+Performance:
+
+Inline critical CSS for above-the-fold; defer non-critical JS.
+
+Optimize images (use placeholders), lazy-load offscreen media.
+
+Keep Lighthouse scores ≥90 (Performance/Accessibility/Best Practices/SEO).
+
+
+Accessibility: Semantic HTML5, labeled controls, color-contrast compliant, focus states, skip-to-content link, prefers-reduced-motion.
+
+SEO: <title>, meta description, Open Graph, favicon, canonical link. Add JSON-LD Person schema with name, sameAs (LinkedIn, GitHub), and location.
+
+Code Quality:
+
+Separate files: index.html, assets/css/styles.css, assets/js/main.js, assets/img/*.
+
+Comment sections clearly; use BEM-ish class names.
+
+No console errors; validate HTML/CSS.
+
+
+Deliverables: Complete zipped project with all assets and a README describing setup.
+
+
+Extras
+
+Add a “Resume” page or modal that renders a clean, print-ready version of the resume, plus a Download PDF button (link to /assets/YESHWANDH_J_S_RESUME.pdf placeholder).
+
+Include a language toggle badge (EN/TA) with placeholder strings for future i18n.
